@@ -4,7 +4,7 @@
 
 - Convert JPG to JPG
 
-  ```
+  ```python
   def JPG2JPG(filename, rescale_size=80):
       image = cv2.imread(filename, cv2.IMREAD_LOAD_GDAL)
 
@@ -21,7 +21,7 @@
 
 - Convert PNG to JPG
 
-  ```
+  ```python
   def PNG2JPG(filename):
       image = Image.open(filename)
       rgb_image = image.convert('RGB')
@@ -31,7 +31,7 @@
 
 - Convert HEIF to JPG
 
-  ```
+  ```python
   def HEIF2JPG(filename):
       heif_file = pyheif.read(open(f"{filename}", "rb").read())
       image = Image.frombytes(
