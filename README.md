@@ -2,6 +2,24 @@
 
 Compilation of documents converter. Join as contributor and add more function. Custom it freely :wink:
 
+## Requirements
+
+- opencv-python
+- Pillow
+- pyheif
+- whatimage
+
+## Installing
+
+**Pip (python3)**
+
+```bash
+pip3 install opencv-python
+pip3 install Pillow
+pip3 install pyheif
+pip3 install whatimage
+```
+
 ## Image Converter
 
 - Convert JPG to JPG
