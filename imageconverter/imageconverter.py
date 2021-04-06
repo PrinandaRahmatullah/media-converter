@@ -7,7 +7,7 @@ import cv2
 
 
 # Output directory
-OUT_DIR = "../output"
+OUT_DIR = "../output/image"
 os.system(f"mkdir {OUT_DIR}")
 
 

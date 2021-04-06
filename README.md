@@ -69,3 +69,18 @@ pip3 install whatimage
   ```
 
 ## Audio Converter
+
+Convert Audio using [pydub](https://github.com/jiaaro/pydub)
+
+- Convert MP3/M4A/etc to WAV
+
+  ```python
+  def Audio2WAV(input_file, output_type="wav"):
+      try:
+          song = AudioSegment.from_file(
+              input_file, format=f"{input_file.split('.')[-1]}")
+      except:
+          print("Failed")
+      song.export(f"{OUT_DIR}/{input_file.split('.')[0]}.{output_type}",
+                  format=f"{output_type}")
+  ```
