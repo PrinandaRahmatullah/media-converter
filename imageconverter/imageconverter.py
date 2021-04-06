@@ -24,3 +24,11 @@ def JPG2JPG(filename, rescale_size=80):
     image = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
     cv2.imwrite(
         f"{OUT_DIR}/{filename}.jpg", image)
+
+
+# function to convert png to jpg format
+def PNG2JPG(filename):
+    image = Image.open(filename)
+    rgb_image = image.convert('RGB')
+    rgb_image.save(
+        f"{OUT_DIR}/{filename}.jpg", "JPEG")
