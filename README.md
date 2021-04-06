@@ -1,5 +1,7 @@
 # Media Converter
 
+Compilation of documents converter. Join as contributor and add more function. Custom it freely :wink:
+
 ## Image Converter
 
 - Convert JPG to JPG
