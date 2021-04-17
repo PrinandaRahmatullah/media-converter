@@ -84,3 +84,14 @@ Convert Audio using [pydub](https://github.com/jiaaro/pydub)
       song.export(f"{OUT_DIR}/{input_file.split('.')[0]}.{output_type}",
                   format=f"{output_type}")
   ```
+
+- Convert OGG to MP3
+
+  ```python
+  def OGG2MP3(input_file, output_type="mp3"):
+    song = AudioSegment.from_ogg(input_file)
+    song = song.set_channels(1)
+    song = song.set_frame_rate(16000)
+    song.export(f"{OUT_DIR}/{input_file.split('.')[0]}.{output_type}",
+                format=output_type, bitrate="256k")
+  ```
